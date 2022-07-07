@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+
+
+:root{
+    --blue: hsl(215, 51%, 70%);
+    --Cyan:hsl(178, 100%, 50%);
+    --blue: hsl(217, 54%, 11%);
+    --vdarkblue: hsl(216, 50%, 16%);
+    --darkblue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+}
+ 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--blue);
+    color: var(--White);
+    line-height:2;
+    /* height: 100vh;  */
+}
+
+.container{
+    margin: 0 auto 1rem;
+    align-content: center;
+    padding: 1.25rem;
+    border: 10px solid var(--blue);
+    width: 400px;
+    height: 50rem;
+}
+
+.wrapper{
+   border: 10px solid var(--vdarkblue);
+   border-radius: 15px;
+   overflow: hidden;
+   padding: 0;
+}
+
+.card {
+    position: relative;
+}
+
+
+.card .image{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.card div{
+    top:0;
+    position: absolute;
+    background-color: var(--Cyan);
+    opacity: 0;
+    width: 100%;
+    height:calc(100% - 10px) ;
+    z-index: 999;
+    transition: opacity 0.3s ease-in-out;
+    
+    
+}
+
+.card div:hover{
+    opacity: 0.6;
+    
+}
+
+
+.card div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+
+.card-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.line{
+    border: 1px solid var(--White);
+    margin-top: 10px;
+    
+}
+
+.eth-text{
+    padding: 10px;
+}
+
+.creator{
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+/*  */
+.avatar{
+    width:40px;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.blue{
+    color:rgba(255, 255, 255, 0.644);
+}
+.cyan{
+    color: var(--Cyan);
+}
+
+.image,
+h2,
+.hover:hover{
+    cursor: pointer;
+}
+
+.image,
+h2:hover{
+    color: var(--Cyan);
+}
